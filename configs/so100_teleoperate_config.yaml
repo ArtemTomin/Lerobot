@@ -1,0 +1,13 @@
+robot:
+  type: so100
+  cameras:
+    iphone:
+      type: opencv
+      camera_index: 1
+      fps: 30
+      width: 1280
+      height: 720
+
+control:
+  type: teleoperate
+  fps: 30 

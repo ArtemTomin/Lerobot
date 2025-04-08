@@ -1,0 +1,24 @@
+robot:
+  type: so100
+  cameras:
+    iphone:
+      type: opencv
+      camera_index: 1
+      fps: 30
+      width: 1280
+      height: 720
+
+control:
+  type: record
+  fps: 30
+  single_task: "Put black socks into white basket"
+  repo_id: "local/socks_basket"
+  tags: ["tutorial"]
+  warmup_time_s: 5
+  episode_time_s: 30
+  reset_time_s: 30
+  num_episodes: 20
+  push_to_hub: false
+  ##policy:
+    ##path: outputs/train/act_so100_test/checkpoints/last/pretrained_model
+  

@@ -1,0 +1,13 @@
+dataset:
+  repo_id: Demonion/socks_basket
+
+policy:
+  type: act
+
+device: mps
+
+output_dir: outputs/train/act_so100_test
+job_name: act_so100_test_socks_basket
+
+wandb:
+  enable: true 
